@@ -94,6 +94,49 @@ Python FastAPI · AI Agent Payments · XRP Ledger Integration Starter
 Download KDC AgentPay Build (.ZIP)
 
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+KDC AgentPay — XRPL Connected Edition
+I've updated the Python project to integrate the XRP Ledger using the official xrpl-py library, added an interactive web dashboard, and included Python dependency installation scripts for Windows.
+
+
+KDC AgentPay XRPL Live
+Python · FastAPI · XRPL Testnet/Mainnet configuration · Web dashboard
+
+ Download Updated XRPL Project ZIP
+ZIP integrity and Python syntax checks passed. Live XRPL execution has not yet been tested in this environment.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+What's included
+
+- Live XRPL integration: JSON-RPC connection, wallet balance queries, XRP transaction submission and validation.
+- Interactive dashboard: Prepare payments, approve transactions, execute payments, and check status.
+- Agent management: Spending budgets, payment authorization, and emergency freeze.
+- Python dependencies: xrpl-py, fastapi, uvicorn, pydantic, python-dotenv, httpx, and pytest.
+- Windows setup: setup_windows.bat and start_windows.bat.
+- Security: API-key authentication, environment-based wallet credentials, and Testnet as the default network.
+The implementation follows the XRPL Python documentation and uses submit_and_wait to check ledger validation. 
+
+XRP Ledger
++1
+
+How to start
+1. Extract the ZIP.
+2. Run setup_windows.bat to install dependencies (internet access required).
+3. Open .env and configure your API keys and XRPL wallet seed.
+4. Set XRPL_ENABLE_PAYMENTS=true when you're ready to send Testnet XRP.
+5. Run start_windows.bat.
+Open the interactive application:
+
+http://127.0.0.1:8000
+
+API documentation: http://127.0.0.1:8000/docs
+
+Important: The project supports connecting to XRPL Mainnet, but it is not production-ready for real-money autonomous payments. Mainnet sending is disabled by default and requires explicit configuration. Before using real funds, the signing, accounting, reconciliation, and authorization systems need additional hardening.
+
+The updated ZIP is ready to download, but dependency installation and actual transaction submission still need to be verified on your Windows computer with a funded Testnet wallet.
+
 
 
 
