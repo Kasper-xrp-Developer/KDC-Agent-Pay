@@ -137,6 +137,46 @@ Important: The project supports connecting to XRPL Mainnet, but it is not produc
 
 The updated ZIP is ready to download, but dependency installation and actual transaction submission still need to be verified on your Windows computer with a funded Testnet wallet.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+KDC AgentPay — XRPL Developer Edition
+I've updated the project using the official XRPL Developer Portal and its Python integration documentation. 
+
+XRP Ledger
++1
+
+KDC AgentPay XRPL Developer Edition
+Python application · Interactive dashboard · XRPL integration
+
+ Download Updated Project ZIP
+Python syntax and ZIP integrity checks passed.
+
+What's new
+- Live XRPL network status: Connects to an XRPL JSON-RPC server and queries its status.
+- Wallet integration: Reads XRP balances from the ledger.
+- Transaction lookup: Checks transaction hashes and validated results.
+- Payment execution: Supports XRP transfers through xrpl-py, subject to authorization.
+- Interactive dashboard: Prepare, approve, execute, and inspect payments.
+- Agent controls: Spending limits, payment approval, and account freezing.
+- Windows installation: Includes dependency installation and startup scripts.
+Run on Windows
+1. Extract the ZIP file.
+2. Run setup_windows.bat.
+3. Edit .env with your API keys and XRPL wallet configuration.
+4. Run start_windows.bat.
+5. Open the dashboard at http://127.0.0.1:8000.
+To test the installation, run:
+.venv\Scripts\python.exe check_install.py
+
+
+The project defaults to XRPL Testnet, with payment execution disabled until explicitly enabled.
+
+Verification status: The package passed syntax and archive checks. I haven't verified a live XRPL connection or completed an on-chain transaction, so I can't yet guarantee error-free operation on your computer.
+
+For real-money Mainnet payments, further security work is required, particularly secure key storage, transaction reconciliation, and stronger agent authorization.
+
+
 
 
 
